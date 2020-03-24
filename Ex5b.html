@@ -1,0 +1,31 @@
+<html lang=“pt-br”>
+	<head>
+		<title>Curso de Javascript</title>
+		<meta charset=“UTF-8”>
+		<script>
+			//Definição da Função
+			function calcular(){
+				let tag=document.forms["curso"];
+				let nome=tag.elements["fNome"].value;
+				let nota1=tag.elements["fNota1"].value;
+				let nota2=tag.elements["fNota2"].value;
+				let media=(eval(nota1)+eval(nota2))/2;
+				tag.elements["fMedia"].value = media;
+			}	
+		</script>
+	</head>
+	<body>
+		<!--Criando um formulario com nome curso -->
+		<form name="curso" action="#" method="post">
+			<label>Nome</label><br>
+			<input type="text" name="fNome" value="Digite seu nome"><br><br>
+			<label>Nota1</label><br>
+			<input type="text" name="fNota1"><br><br>
+			<label>Nota2</label><br>
+			<input type="text" name="fNota2"><br><br>
+			<label>Média</label><br>
+			<input type="text" name="fMedia" disabled><br><br>
+			<input type="button" value="Confirmar" onclick="calcular();" >
+		</form>
+	</body>
+</html>

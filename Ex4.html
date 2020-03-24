@@ -1,0 +1,27 @@
+<html lang=“pt-br”>
+	<head>
+		<title>Curso de Javascript</title>
+		<meta charset=“UTF-8”>
+		<script>
+			//Definição da Função
+			function mudaCor(cor){
+				//Cria a variavel tagP e atribui a ela um vetor com todas tags p
+				let tagP=document.getElementsByTagName("p");
+				//Ultiliza o for para percorrer o vetor de tags p
+				for(let i=0; i<tagP.length;i++){
+					tagP[i].style.color = cor;
+				}	
+			}
+		</script>
+	</head>
+	<body>
+		<!--Criando um paragrafo com o id texto -->
+		<p>Curso de Javascript</p>
+		<p>Programação Web</p>
+		<p>ETEC</p>
+		<!--Criando botões que chamam a função passando o texto desejado -->
+		<input type="button" value="Rosa" onclick="mudaCor('pink');" >
+		<input type="button" value="Azul" onclick="mudaCor('blue');" >
+		<input type="button" value="Preto" onclick="mudaCor('black');" >
+	</body>
+</html>

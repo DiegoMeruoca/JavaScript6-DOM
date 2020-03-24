@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Curso de Javascript</title>
+		<script type="text/javascript" >
+			function TituloFont(cor){
+				let no = document.getElementById("titulo");
+				no.style.color = cor;
+			}
+			function PaginaFundo(cor){
+				let no = document.getElementById("site");
+				no.style.backgroundColor = cor;
+			}
+		</script>
+	</head>
+	<body id='site' text=grey>
+		<h3 id='titulo'> Minha Página Com Javascript </h3>
+		<br> Fonte do Título: 
+		<input type="button" value="Vermelho" onclick="TituloFont('#FF0000');" >
+		<input type="button" value="Verde" onclick="TituloFont('Green');" >
+		<input type="button" value="Azul" onclick="TituloFont('Blue');" >
+		<input type="button" value="Rosa" onclick="TituloFont('Pink');" >
+		<input type="button" value="Amarelo" onclick="TituloFont('Yellow');" >
+		<input type="button" value="Preto" onclick="TituloFont('#000000');" >
+		<br><br> Fundo da Página: 
+		<input type="button" value="Vermelho" onclick="PaginaFundo('#FF5050');" >
+		<input type="button" value="Verde" onclick="PaginaFundo('#4EEE94');" >
+		<input type="button" value="Azul" onclick="PaginaFundo('#98F5FF');" >
+		<input type="button" value="Rosa" onclick="PaginaFundo('Pink');" >
+		<input type="button" value="Amarelo" onclick="PaginaFundo('#EEFF00');" >
+		<input type="button" value="Preto" onclick="PaginaFundo('#000000');" >
+	</body>
+</html>
